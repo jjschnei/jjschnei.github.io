@@ -1,0 +1,48 @@
+body{
+  background: url(hero-image.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -background-size: cover;
+}
+
+nav {
+  position: relative;
+  margin: 20px 0;
+}
+
+nav ul{
+  text-align: center;
+
+}
+nav.center ul {
+  text-align: center;
+}
+
+nav li {
+  margin: 0 5px 10px 0;
+  display: inline-block;
+  list-style-type: none;
+  padding: 7px;
+  text-align: center;
+}
+
+
+
+nav a:link, visited{
+  color: #8c8c8c;
+  font-family: Arial
+  font-size: 1.25em;
+  text-decoration: none;
+  text-transform: lowercase;
+
+}
+
+}
+nav a:hover{
+  color: #4a4a4a;
+}
+
+nav a:active{
+  color: #171717;
+}
