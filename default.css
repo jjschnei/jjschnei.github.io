@@ -21,13 +21,20 @@ nav li {
 
 
 
-nav a:link, visited{
+nav a:link {
   color: #8c8c8c;
   font-family: Arial
   font-size: 1.25em;
   text-decoration: none;
   text-transform: lowercase;
+}
 
+nav a:visited {
+  color: #8c8c8c;
+  font-family: Arial
+  font-size: 1.25em;
+  text-decoration: none;
+  text-transform: lowercase;
 }
 
 }
