@@ -35,6 +35,16 @@ img.medium {
   max-width: 550px
 }
 
+img.preview{
+  max-width: 250px;
+  border: 2px solid black;
+}
+
+a:link{
+  text-decoration: none;
+
+}
+
 dt {
   font-weight: bold;
   font-style: italic;
