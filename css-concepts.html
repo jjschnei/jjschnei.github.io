@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <link type="text/css" rel="stylesheet" href="default.css" />
+
+    <link type="text/css" rel="stylesheet" href="blog-template-stylesheet.css" />
+
+
+    <meta charset="utf-8" />
+    <title>Jeff Schneider's Blog</title>
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <header>
+      <h1>What’s Margin, Border, and Padding?</h1>
+      <p>
+        November 29th, 2015<br>
+       Jeff Schneider
+     </p>
+    </header>
+
+    <article>
+      <p>
+        Margin, border, and padding are rules that allow web designers to specify the shape of a piece of content on a webpage.  CSS treats each HTML element like a box.  CSS uses 3 main properties to shape the appearance of the box:  margin, border and padding.  Once you’ve shaped your box, you use positioning to place the box where you want it on the page.
+      </P><p>
+        Each piece of content on a website, such as text or an image, is surrounded by padding, a border, and margin. Here is a visual representation (often called the “box model”):
+        <br>
+        <br>
+        <img src="imgs/BOX_MODEL.png" class="medium" alt="CSS Box Model Diagram" />
+      </P>
+      <dl>
+        <dt>Content:</dt>
+          <dd>The content of the box, where text or images are located.</dd>
+        <dt>Padding:</dt>
+          <dd>Clears a transparent area around the content.</dd>
+        <dt>Border:</dt>
+          <dd>A boarder that surrounds the padding.  Every box has a border (even if it’s 0px wide or not visible).</dd>
+        <dt>Margin:</dt>
+          <dd>Clears a transparent area outside the border.</dd>
+      </dl>
+      <p>
+        Let’s take a look at how we would use these terms on a paragraph of text.  Here is the paragraph with no CSS:<br>
+        <img src="imgs/no_styling.jpg" class="medium" />
+      </p><p>
+        Let’s create some CSS to specify the shape of the text box:
+        <br>
+        <br>
+        <img src="imgs/CSS_example.jpg" />
+      </p><p>
+        Here is the resulting element:<br>
+        <img src="imgs/display_example.jpg" class="medium" />
+      </p><p>
+        Let’s take a look at what each property did to the box:
+          <ul>
+            <li>300px (the width of the content)</li>
+            <li>25px (added 25px of padding space around the text)</li>
+            <li>15px (created a 15px wide blue border)</li>
+            <li>100px (created 100px of margin around the border)</li>
+          </ul>
+        </p><p>
+        Now you know the difference between padding, borders, and margins.  You also know the basics of the box model.  Now go forth and make beautiful things!
+      </p><p>
+    </article>
+
+    <footer>
+      <p>
+        Copyright Jeff Schneider 2015
+      </p>
+    </footer>
+
+
+
+  </body>
+</html>
