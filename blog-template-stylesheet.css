@@ -1,24 +1,25 @@
 header {
-  background-image: url(http://blog.teamtreehouse.com/wp-content/uploads/2013/02/jquerynav.jpg);
-  margin: 0, auto;
-  padding: 0, 15px;
-  position: relative;
+
+  background-color: #51ccad;
   color: #ffffff;
   text-align: center;
   font-size: 40px;
   font-weight: 500;
   line-height: 1.4;
+  margin-top: -35px;
 
 }
 
 header p{
+
   text-align: center;
   font-size: 17px;
 }
 
 article, footer {
-  margin-right: 150px;
-  margin-left: 150px;
+  margin-right: 12em;
+  margin-left: 12em;
+  font-color: #404040;
 }
 
 body{
@@ -28,45 +29,5 @@ body{
   -background-size: cover;
 }
 
-nav {
-  position: relative;
-  margin: 20px 0;
-}
-
-nav ul{
-  text-align: center;
-
-}
-nav.center ul {
-  text-align: center;
-}
-
-nav li {
-  margin: 0 5px 10px 0;
-  display: inline-block;
-  list-style-type: none;
-  padding: 7px;
-  text-align: center;
-}
-
-
-
-nav a:link, visited{
-  color: #8c8c8c;
-  font-family: Arial
-  font-size: 1.25em;
-  text-decoration: none;
-  text-transform: lowercase;
-
-}
-
-}
-nav a:hover{
-  color: #4a4a4a;
-}
-
-nav a:active{
-  color: #171717;
-}
 
 
