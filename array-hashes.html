@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="default.css" />
+
+    <link type="text/css" rel="stylesheet" href="stylesheets/array-hashes.css" />
+
+    <meta charset="utf-8" />
+    <title>Arrays and Hashes</title>
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="blog-index.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <header>
+      <h1>The Basics of Ruby Hashes and Arrays</h1>
+      <p>
+        December 6th, 2015<br>
+       Jeff Schneider
+     </p>
+    </header>
+
+    <article>
+
+      <p>
+        As you begin to explore Ruby, you will find yourself needing to organize not just individual objects, but collections of objects.  Ruby allows you to do this with container objects.  Ruby comes with two built-in container objects:  meet the Array and Hash!
+      </p><p>
+      <h3>So What Exactly is an Array?</h3>
+      </p><p>
+          An array is an ordered collection of objects.  We say that it’s ordered because each object is indexed:
+      <br>
+      <pre>
+       array_name = [a,  b,  c,  d,  e]
+                     |   |   |   |   |
+       Index number  0   1   2   3   4
+      </pre>
+      (Note that the first object in an array has 0)
+      <br>
+      <br>
+      Here is the syntax to look up a particular object in the above array called array_name:
+        <pre>
+        Array_name .index [2]    => c
+        </pre>
+      You  can put any object inside of an array such as:  integers, strings, true/false, and even other arrays.  To look up the last object in an array, use index -1.
+      </p><p>
+          There are four ways to create a new array:
+          <ul>
+            <li>With the Array.new method</li>
+            <li>With the literal constructor</li>
+            <li>With a top level method called Array</li>
+            <li>With the special %w{. . .} and %i{. . .} notations</li>
+          </ul>
+      </p>
+      <h3>So What Exactly is an Array?</h3>
+      <p>
+        Hashes store ordered objects in pairs called keys and values. You can store any object as a key or value.  You use the key to call its value.  Each key must be unique, though values can be repeated.  Hashes are ordered by the order in which you entered key/value pairs.  Like arrays, hashes are ordered objects because they remember the order in which they were entered.
+        <br>
+        There are four ways to create a new hash:
+        <ul>
+          <li>With the literal constructor</li>
+          <li>With the Hash.new method</li>
+          <li>With the Hash.[] method</li>
+          <li>With the top-level method whose name is Hash</li>
+        </ul>
+      </p>
+      </p><p>
+          Here is an example of creating a new state capitals hash using the Hash.new method:
+        <pre>
+          state_capitals = Hash.new
+        </pre>
+        Once we’ve created our new hash, it’s time to fill it with key/value pairs.  There are several ways you can add key/value pairs.  Here are some examples of the different ways to do it:
+        <pre>
+          state_capitals [“Alabama”] = “Montgomery”
+          state_capitals.store (“Alaska”, “Juneau”)
+          state_capitals [] = (“Arizona”, “Phoenix”)
+        </pre>
+        To retrieve a value from a hash, you use the [] method.  Much like calling an object from an array using the index number, you can access values using a key.
+      </p>
+    </article>
+
+    <footer>
+      <p>
+        Copyright Jeff Schneider 2015
+      </p>
+    </footer>
+  </body>
+</html>

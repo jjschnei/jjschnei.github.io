@@ -1,5 +1,4 @@
 header {
-
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   background-color: #0099e6;
   color: #ffffff;
@@ -9,6 +8,19 @@ header {
   line-height: 1.4;
   margin-top: -35px;
   padding-top: .05em;
+
+
+
+/*  font-size: 1.2em;
+  line-height: 1.4em;
+  margin-right: 12em;
+  margin-left: 12em;
+  font-color: #404040;
+  font-weight: lighter;
+  font-style: normal;
+  font-stretch: normal;
+  font-variant: normal;*/
+}
 
 }
 
@@ -21,20 +33,7 @@ header p{
 section{
   margin-right: 12em;
   margin-left: 12em;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-  font-size: .8em;
-  line-height: 1em;
-  font-color: #404040;
-  font-weight: lighter;
-  font-style: normal;
-  font-stretch: normal;
-  font-variant: normal;
 
-}
-
-.post{
-  margin-left: 2em;
-  padding-bottom: 2em;
 }
 
 article{
@@ -51,7 +50,7 @@ article{
 }
 
 body{
-  background: url(imgs/paper.png) fixed repeat;
+  background: url(../imgs/paper.png) fixed repeat;
   -moz-background-size: cover;
   -o-background-size: cover;
   -background-size: cover;
@@ -62,8 +61,8 @@ img.medium {
 }
 
 img.preview{
-  max-width: 220px;
-  mar
+  max-width: 250px;
+  border: 2px solid black;
 }
 
 a:link{
@@ -84,5 +83,3 @@ footer{
   margin-right: 150px;
 
 }
-
-
