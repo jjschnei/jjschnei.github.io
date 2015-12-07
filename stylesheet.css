@@ -1,7 +1,15 @@
 body{
-  background: url(hero-image.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
+  background: url(imgs/paper.png) repeat fixed;
   -moz-background-size: cover;
   -o-background-size: cover;
   -background-size: cover;
+}
+
+img {
+  width: 35vw;
+  border: sold black .1em;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  border-radius: 50%
 }
