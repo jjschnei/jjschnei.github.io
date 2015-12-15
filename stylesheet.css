@@ -13,3 +13,26 @@ img {
   display: block;
   border-radius: 50%
 }
+
+
+section li {
+  list-style-type: none;
+  text-align: center;
+  color: #262626;
+  font-family: Arial
+  font-size: 1.25em;
+  text-transform: lowercase;
+  margin: 1.25em;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited{
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
