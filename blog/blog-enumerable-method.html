@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link type="text/css" rel="stylesheet" href="default.css" />
+    <link type="text/css" rel="stylesheet" href="../default.css" />
 
-    <link type="text/css" rel="stylesheet" href="blog-template-stylesheet.css" />
+    <link type="text/css" rel="stylesheet" href="../blog-template-stylesheet.css" />
 
     <meta charset="utf-8" />
     <title>Enumerable Methods</title>
@@ -12,12 +12,12 @@
   <body>
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="resume.html">Resume</a></li>
-        <li><a href="blog-index.html">Blog</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../portfolio.html">Portfolio</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../resume.html">Resume</a></li>
+        <li><a href="../blog-index.html">Blog</a></li>
+        <li><a href="../contact.html">Contact</a></li>
       </ul>
     </nav>
 
@@ -32,31 +32,42 @@
     <article>
       <h3>What's an Enumerable?</h3>
       <p>
-        One of the things that makes Ruby powerful, is being able to use Enumerable methods.  “Enumerable” is a “module”.  Simply stated, that means it a bunch of methods packaged together that can be “mixed in” with other classes (like Array and Hash).
+        One of the things that makes Ruby powerful is being able to use Enumerable methods.  “Enumerable” is a “module”.  Simply stated, that means it a bunch of methods packaged together that can be “mixed in” with other classes (like Arrays and Hashes).
       </p><p>
-        This means that you don’t have to write out every method many different times.  You can write them just once, package them up as Enumerable, and then tell Array and Hash to use them.  The only catch is that the class that wants to use Enumerable has to have its own #each method that Enumerable can use.
+        This means that you don’t have to write out every method a bunch of times.  You can write them just once, package them up as Enumerable, and then tell Array and Hash to use them.  The only catch is that the class on which you want to use Enumerable has to have its own #each method that Enumerable can use.
       </p><p>
-        Enumerable provides lots of useful ways of doing things to elements of a collection object (like an Array or Hash).  For example, you are probably familiar with the #each iterator method that comes pre-packaged with the Array and Hash classes.  It basically goes through each element of the object and passes it to a block you’ve specified:
+        Let's take a look at how Enumerable provides useful ways of doing things to elements of a collection object (like an Array or Hash).  For example, you are probably familiar with the #each iterator method that comes pre-packaged with the Array and Hash classes.  It basically goes through each element of the object and passes it to a block that you’ve specified:
+      </p><p>
 
-        <img="../imgs/inumerable-blog-imgs/each-method.jpg" />
-        Returning:
-        <img="../imgs/inumerable-blog-imgs/each-returns.jpg" />
-
-        That should look familar.  Now let’s take a look at something a bit more complicated to see why we would want to use an Enumerable method instead of #each.
+        <img src="../imgs/enumerable-blog-imgs/each-method.jpg" />
+      <br>
+        =>
+      <br>
+        <img src="../imgs/enumerable-blog-imgs/each-returns.jpg" />
       </p><p>
-        Let’s say we want modify all of the elements in an Array (say take them to the third power)?  Just using the #each method, we would have to use a complicated loop:
-        <img="../imgs/inumerable-blog-imgs/third-power-method.jpg" />
-        Returning:
-        <img="../imgs/inumerable-blog-imgs/third-power-returns.jpg" />
+        That should look familiar.  Now let’s take a look at something a bit more complicated to see why we would want to use an Enumerable method instead of #each.
+      </p><p>
+        Let’s say we want modify all of the elements in an Array (by taking them to the third power)?  Using the #each method, we would have to use a complicated loop:
+      </p><p>
+        <img src="../imgs/enumerable-blog-imgs/third-power-method.jpg" />
+        <br>
+        =>
+        <br>
+        <img src="../imgs/enumerable-blog-imgs/third-power-returns.jpg" />
       </p>
       <h3>Enumerable methods to the rescue!</h3>
       <p>
-        You can use either the map or collect (they do the same thing) Enumerable methods.
-        Array.map{|x| x**3}
+        Instead of #each, you can use either of the #map or #collect Enumerable methods (they do the same thing):
+      <br>
+        <img src="../imgs/enumerable-blog-imgs/map-method.jpg" />
+        <br>
+        =>
+        <br>
+        <img src="../imgs/enumerable-blog-imgs/third-power-returns.jpg" />
       </p><p>
-        Using the map method, we’ve refactored a complicated loop into a single line.  It’s that simple. The map and collect methods return a new array with the result of running a block once for every element.
+        Using the #map method, we’ve refactored a <b><i>complicated loop into a single line</i></b>.  It’s that simple. The #map and #collect methods run a block on every element in the array and then return a new array based on the result of the block.
       </p><p>
-        For your reference, here is the <a href="http://ruby-doc.org/core-2.1.1/Enumerable.html#method-i-map" target="_blank">enumerable map method entry in the Ruby docs</a>.
+        For your reference, here is the <b><a href="http://ruby-doc.org/core-2.1.1/Enumerable.html#method-i-map" target="_blank">enumerable map method entry in the Ruby docs</a></b>.
         </p>
     </article>
 
