@@ -37,3 +37,13 @@ section a:visited{
 section a:hover {
   text-decoration: underline;
 }
+
+article {
+  margin-left: 17em;
+  margin-right: 17em;
+  margin-top: -1em;
+  margin-bottom: 1em;
+
+
+
+}
