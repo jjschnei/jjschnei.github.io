@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link type="text/css" rel="stylesheet" href="../default.css" />
+        <link type="text/css" rel="stylesheet" href="../blog-template-stylesheet.css" />
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+            <nav>
+              <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../portfolio.html">Portfolio</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../resume.html">Resume</a></li>
+                <li><a href="../blog-index.html">Blog</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+              </ul>
+            </nav>
+
+    <header>
+      <h1>Creating Classes</h1>
+      <p>
+       December 20th, 2015<br>
+       Jeff Schneider
+     </p>
+    </header>
+
+    <article>
+
+    <h3>What’s a Class?</h3>
+    <p>
+      Classes are structure that let you organize a group of methods.  You’ve actually been dealing with Classes before, even if you didn’t realize it.  Everything in Ruby is an object (numbers, strings, arrays, hashes, etc.) and each object is an instance of a class.  To create a class, you use the notation ‘class ClassName’.  Note that class names are in CamelCase.  We’ll look at creating our own class in the YahtzeeRoll example below.
+    </p><p>
+    <h3>What’s the Initialize Method?</h3>
+    </p><p>
+      Initialize is a special method in Ruby. When you create a new instance of a class, Ruby calls the object’s initialize method (if it has one).  As the name suggests, this method lets you setup (i.e. initialize) the instance of your class with specified code.  You also have the option to pass parameters to your initialize method.  In the example below, we’ll see how it works.
+    </p><p>
+    <h3>What’s an Instance Method?</h3>
+    </p><p>
+      Classes are useful because they allow methods to interact.  Instance methods are methods that can only be used on a particular instance of the class.  You can also pass instance variables between instance methods. In the example below, we call the #roll instance method on the class YahtzeeRoll.
+    </p><p>
+    <h3>What’s an Instance Variable?</h3>
+    </p><p>
+      Classes not only share their methods, but also their variables.  Variables that can be passed between methods in a class are called instance variables.  You can spot one because they start with a ‘@’.  Instance methods are often setup in the initialize method.  Take a peek at YahtzeeRoll class below and see if you can spot some instance variables.
+    </p><p>
+    <h3>Let’s Roll Some Dice!</h3>
+    </p><p>
+      I created a class called YahtzeeRoll to demonstrate what we've just covered:
+    </p><p>
+      <img src="../imgs/class-blog-imgs/roll-class.JPG" alt="YahtzeeClass example" />
+    </p><p>
+      This class roles 5 dice.
+    </p><p>
+      On line 1, I named the class (remember to use CamelCase for the class name).
+    </p><p>
+      On line 3, I created an initialize method.  It calls the instance method #roll.  This means that when you create an instance of YahtzeeRoll using YahtzeeRoll.new, that instance will immediately run the #roll method.
+    </p><p>
+      Take a look at the #roll instance method on line 7.  You can see that I created 5 instance variables, one for each of the 5 dice we are rolling (the #rand method creates a random number from 0 to the parameter).
+    </p><p>
+      In the #show_roll instance method on line 15, you can see that the instance variables from #roll are passed into #show_roll.
+    </p><p>
+      On line 24, I created a new instance of YahtzeeRoll and set it to roll.  Notice that the syntax is ClassName.new just like Array.new and Hash.new.
+    </p><p>
+      On the next line, I can then call my instance method #show_roll on our new instance of YahtzeeRoll.
+    </p><p>
+      Here’s the result:
+    </p><p>
+    <img src="../imgs/class-blog-imgs/roll-output.JPG" alt="YahtzeeClass example" />
+    </p><p>
+      Let’s breakdown how we got this output.  Line 24 created a new instance of class YahtzeeRoll.  Creating the instance called our initialize variable, which called our #roll instance method.
+    </p><p>
+      On line 25, we then called the #show_roll method on the instance roll.  The #show_roll method took the instance variables from the #roll method and the printed them (i.e. showing the outcome of the roll).
+    </p><p>
+      Now go forth into the world and create your own classes!
+    </p>
+
+  </article>
+
+    <footer>
+      <p>
+        Copyright Jeff Schneider 2015
+      </p>
+    </footer>
+
+
+
+
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    </body>
+</html>
