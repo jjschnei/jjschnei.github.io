@@ -1,0 +1,141 @@
+body{
+  background: url(../imgs/paper.png) fixed repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -background-size: cover;
+  text-align: center;
+
+}
+
+.wrapper{
+  width: 45em;
+  margin: 0em auto;
+}
+.header{
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: 1.2em;
+  margin-top: -1.2em;
+  text-align: center;
+}
+
+.entry{
+  width: 20.8em;
+  float: left;
+  margin: .7em;
+  height: 17.3em;
+  background-color: #e7e3d8;
+  background-position: bottom;
+  border: .1em solid #d6d6d6;
+
+}
+
+figure {
+  display: block;
+  width: 15.625em;
+  height: 10.625em;
+  background-color: #e7e3d8;
+  margin: 0em;
+  padding: .563em;
+  text-align: center;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  color: #665544
+
+}
+
+figure img{
+  width: 19.6em;
+  height: 14.9em;
+  border: .1em solid #d6d6d6;
+}
+
+figcaption{
+  padding-left: 4.2em;
+}
+
+
+/*
+
+#leftside{
+  display: inline-block;
+  padding:5em;
+}
+
+#rightside{
+  float: left;
+  padding:5em;
+}
+header {
+
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  background-color: #0099e6;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: lighter;
+  line-height: 1.4;
+  margin-top: -35px;
+  padding-top: .05em;
+
+}
+
+
+
+section{
+  display: inline-block;
+  margin-right: auto;
+  margin-left: auto;
+
+  margin: ;
+
+
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: .8em;
+  line-height: 1em;
+  font-color: #404040;
+  font-weight: lighter;
+  font-style: normal;
+  font-stretch: normal;
+  font-variant: normal;
+
+}
+
+.post{
+  margin-left: 2em;
+  padding-bottom: 2em;
+}
+
+article{
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: 1.2em;
+  line-height: 1.4em;
+  margin-right: 12em;
+  margin-left: 12em;
+  font-color: #404040;
+  font-weight: lighter;
+  font-style: normal;
+  font-stretch: normal;
+  font-variant: normal;
+}
+
+
+
+a:link{
+  text-decoration: none;
+
+}
+
+dt {
+  font-weight: bold;
+  font-style: italic;
+}
+
+footer{
+  color: grey
+  font-style: italic;
+  font-size: .8em;
+  text-align: right;
+  margin-right: 150px;
+
+}
+
+*/
