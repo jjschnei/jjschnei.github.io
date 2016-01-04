@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Hashes vs. Objects</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link type="text/css" rel="stylesheet" href="../default.css" />
+        <link type="text/css" rel="stylesheet" href="../blog-template-stylesheet.css" />
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+
+        <!-- highlightjs.org script so you can write code in html -->
+
+        <link rel="stylesheet" href="/../blog-template-stylesheet.css">
+        <script src="../highlight.pack.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+
+
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+            <nav>
+              <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../portfolio.html">Portfolio</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../resume.html">Resume</a></li>
+                <li><a href="../blog-index.html">Blog</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+              </ul>
+            </nav>
+
+    <header>
+      <h1>Data Structure Smackdown:  Objects vs. Hashes!</h1>
+      <p>
+       January 3rd, 2016<br>
+       Jeff Schneider
+     </p>
+    </header>
+
+    <article>
+
+    <h3>Ruby Hashes vs. JavaScript Objects</h3>
+    <p>
+      If you have had some exposure to Ruby and JavaScript, you’ve likely noticed that Ruby’s hashes and JavaScript’s objects seem related.  In this post, I’ll first explore their similarities, followed by the differences.
+    </p><p>
+      <h3>Similarities</h3>
+      Hashes and objects accomplish the same general thing.  They are both structures that hold values which are by keys.  All keys must be unique, however, values can be repeated.
+      Both data structures look similar.  Here is how you would create a hash and object using literal notation:
+    </p>
+      <samp><pre><code>
+        //JavaScript object:
+        var jeff = { from: “Porltand”, favorite_food: “Burritos”}
+
+        #Ruby hash:
+        jeff = { from: “Porltand”, favoriteFood: “Burritos” };
+      </code></pre></samp>
+    </p><p>
+       In both data structures, you use the name of the data structure with its key or property to get the matching value.  Both hashes and objects accept several syntax variations to access the values.  Let’s take a look at an example:
+    </p><p>
+      <pre><code>
+        //JavaScript object:
+        jeff[“from”];
+        => Portland
+
+        #Ruby hash:
+        jeff[:from]
+        => Portland
+      </code></pre>
+    </p><p>
+      As you will see they look very similar.
+      Once you’ve created a hash or object, both data structures can be similarly manipulated.  For example, you can add more key / value pairs.  You can remove key / value pairs.  You can even make both data structures multidimensional.
+    </p><p>
+    <h3>Differences</h3>
+    </p><p>
+      There is a difference in terminology between objects and hashes.  While the data in hashes are called keys and values, in JavaScript the pairs are often referred to as ‘properties’.  This difference is in name only as they do the same thing.
+      A more fundamental difference is that you can put a function inside of an object, but not in a hash.
+    </p><p>
+      The hash and the object have battled evenly to this point.  However, the ability to put a function in an object gives it more <i>functionality</i> than a hash (see what I did there?).
+    </p>
+  </article>
+
+    <footer>
+      <p>
+        Copyright Jeff Schneider 2015
+      </p>
+    </footer>
+
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    </body>
+</html>
