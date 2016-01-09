@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link type="text/css" rel="stylesheet" href="default.css" />
+        <link type="text/css" rel="stylesheet" href="stylesheets/cheat-sheet.css" />
+    </head>
+    <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="blog-index.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <article>
+     <header>
+       <h1>Cheat Sheet</h1>
+       <h3>JavaScript Objects</h3>
+     </header>
+      <section id="javascript">
+        <h1>How to create JS Objects:</h1>
+        <p>
+        There are 3 different ways to create new objects:
+        <ul>
+          <li>Define and create a single object, using an object literal.</li>
+          <li>Define and create a single object, with the keyword new.</li>
+          <li>Define an object constructor, and then create objects of the constructed type.</li>
+        </ul>
+        <b>Object Literal:</b>
+        <pre><code>
+        var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+        </code></pre>
+
+        <b>Keyword New:</b>
+        <pre><code class="js">
+            var person = new Object();
+            person.firstName = "John";
+            person.lastName = "Doe";
+            person.age = 50;
+            person.eyeColor = "blue";
+        </code></pre>
+
+        <b>Object Constructor</b>
+        <pre><code>
+          function person(first, last, age, eye) {
+              this.firstName = first;
+              this.lastName = last;
+              this.age = age;
+              this.eyeColor = eye;
+           }
+        </code></pre>
+        The above function (person) is an object constructor. Once you have an object constructor, you can create new objects of the same type:
+        <pre><code>
+            var myFather = new person("John", "Doe", 50, "blue");
+            var myMother = new person("Sally", "Rally", 48, "green");
+        </code></pre>
+
+        <b>The <i>this</i> Keyword</b> is the object that "owns" the JavaScript code.
+        <ul>
+          <li>The value of <b>this</b>, when used in a function, is the object that "owns" the function.</li>
+          <li>The value of <b>this</b>, when used in an object, is the object itself.</li>
+          <li>The <b>this</b> keyword in an object constructor does not have a value. It is only a substitute for the new object.</li>
+          <li>The value of <b>this</b> will become the new object when the constructor is used to create an object.</li>
+        </ul>
+        <br>
+
+        </p>
+
+        <h1>How to Access JS Objects:</h1>
+        <p>
+        You can access object properties by either dot or bracket notation:
+
+        <pre><code>
+            objectName.propertyName
+
+            objectName["propertyName"]
+        </code></pre>
+
+        Accessing object methods:
+
+        <pre><code>
+            objectName.methodName()
+        </code></pre>
+        Adding new properties to an existing object:
+        <pre><code>
+            person.nationality = "English";
+        </code></pre>
+
+        All objects have a name as well as these other attributes that define how the property can be accessed: enumerable, configurable, and writable.  JavaScript objects inherit the properties of their prototype.
+        <br>
+        You create an object method with the following syntax:
+        <pre><code>
+            methodName : function() { code lines }
+        </code></pre>
+        You access an object method with the following syntax:
+        <pre><code>
+            objectName.methodName()
+        </code></pre>
+
+        The standard way to create an object prototype is to use an object constructor function:
+
+        <pre><code>
+          function person(first, last, age, eyecolor) {
+              this.firstName = first;
+              this.lastName = last;
+              this.age = age;
+              this.eyeColor = eyecolor;
+        }
+        </code></pre>
+        With a constructor function, you can use the new keyword to create new objects from the same prototype:
+        <pre><code>
+              var myFather = new person("John", "Doe", 50, "blue");
+              var myMother = new person("Sally", "Rally", 48, "green");
+        </code></pre>
+        The constructor function is the prototype for your person objects.
+        <br>
+        Here is how you would add a new method to an existing method:
+        <pre><code>
+              myFather.name = function () {
+                  return this.firstName + " " + this.lastName;
+              };
+        </code></pre>
+        </p>
+        <h4>How to Iterate JS Objects:</h4>
+
+        <pre><code>
+              for (var property in object) {
+                  if (object.hasOwnProperty(property)) {
+                      // do stuff
+                  }
+              }
+        </code></pre>
+        <p>
+        Object.getOwnPropertyNames() returns an array whose elements are strings corresponding to the enumerable and non-enumerable properties found directly upon obj. The ordering of the enumerable properties in the array is consistent with the ordering exposed by a for...in loop (or by Object.keys()) over the properties of the object. The ordering of the non-enumerable properties in the array, and among the enumerable properties, is not defined.
+        <br><br>
+        The block of code inside of the 'for...in' loop will be executed once for each property inside the object.  Here's another example:
+        <pre><code>
+              var person = {fname:"John", lname:"Doe", age:25};
+
+              for (x in person) {
+                  txt += person[x];
+              }
+        </code></pre>
+
+
+        The Object.keys() method returns an array of a given object's own enumerable properties, in the same order as that provided by a for...in loop (the difference being that a for-in loop enumerates properties in the prototype chain as well).  Here is the syntax:
+        <pre><code>
+        Object.keys(obj)
+        </code></pre>
+        Object.keys() returns an array whose elements are strings corresponding to the enumerable properties found directly upon object. The ordering of the properties is the same as that given by looping over the properties of the object manually.
+        <pre><code>
+  var arr = ['a', 'b', 'c'];
+  console.log(Object.keys(arr)); // console: ['0', '1', '2']
+
+  // array like object
+  var obj = { 0: 'a', 1: 'b', 2: 'c' };
+  console.log(Object.keys(obj)); // console: ['0', '1', '2']
+
+   // array like object with random key ordering
+   var an_obj = { 100: 'a', 2: 'b', 7: 'c' };
+   console.log(Object.keys(an_obj)); // console: ['2', '7', '100']
+
+   // getFoo is property which isn't enumerable
+   var my_obj = Object.create({},{getFoo:{value: function(){return this.foo;}}});
+   my_obj.foo = 1;
+
+   console.log(Object.keys(my_obj)); // console: ['foo']
+        </code></pre>
+
+      </p>
+
+<!--       </section>
+
+      <section id="ruby">
+
+      <h2>Ruby Classes</h2>
+      <h1>How to create Ruby Classes:</h1>
+
+      <h1>How to Access Ruby Classes:</h1>
+
+      <h1>How to Iterate Ruby Classes:</h1> -->
+
+      </article>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    </body>
+</html>

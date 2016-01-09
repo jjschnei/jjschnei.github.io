@@ -1,0 +1,60 @@
+body{
+  background: url(../imgs/paper.png) fixed repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -background-size: cover;
+  text-align: left;
+}
+
+header {
+
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  background-color: #0099e6;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: lighter;
+  line-height: 1.4;
+  margin-top: -35px;
+  padding-top: .05em;
+}
+
+header p{
+  text-align: center;
+  font-size: 17px;
+}
+
+section{
+  margin-right: 7em;
+  margin-left: 7em;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  line-height: 1.3em;
+  font-color: #404040;
+  font-weight: lighter;
+  font-style: normal;
+}
+
+pre{
+
+  background-color: #ffffff;
+  border-left-style: solid;
+  border-left-width: .20em;
+  border-left-color: #0099e6;
+  box-shadow: 0px 0px .031em .125px #cccccc;
+  margin-left: 3em;
+  margin-right: 20em;
+  font-size: 1.1em;
+}
+
+/*p
+  margin-right: 12em;
+  margin-left: 12em;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: .8em;
+  line-height: 1em;
+  font-color: #404040;
+  font-weight: lighter;
+  font-style: normal;
+  font-stretch: normal;
+  font-variant: normal;*/
