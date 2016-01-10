@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Recursion</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link type="text/css" rel="stylesheet" href="../default.css" />
+        <link type="text/css" rel="stylesheet" href="../blog-template-stylesheet.css" />
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+
+        <!-- highlightjs.org script so you can write code in html -->
+
+        <link rel="stylesheet" href="/../blog-template-stylesheet.css">
+
+        <script src="../highlight.pack.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+
+
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+            <nav>
+              <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../portfolio.html">Portfolio</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../resume.html">Resume</a></li>
+                <li><a href="../blog-index.html">Blog</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+              </ul>
+            </nav>
+
+    <header>
+      <h1>A Basic Overview of Recursion</h1>
+      <p>
+       January 10th, 2016<br>
+       Jeff Schneider
+     </p>
+    </header>
+
+    <article>
+      <h3>What is Recursion?</h3>
+      <p>
+      Recursion is a method where the solution to a problem is found by solving smaller instances of the same problem.  It’s a helpful technique to use when problems are too big or complex to solve directly.  By breaking down a difficult problem into smaller versions of itself, it becomes possible to solve one of these smaller versions and then build up to a solution of the entire problem.
+      <br><br>
+      There are several types of recursion:
+      <ul>
+        <li>Single recursion and multiple recursion</li>
+        <li>Indirect recursion</li>
+        <li>Anonymous recursion</li>
+        <li>Structural versus generative recursion</li>
+      </ul>
+      The specifics of each is beyond the general overview I’m providing here.  You can learn more about the intricacies of each type on <a target="_blank" href=”https://en.wikipedia.org/wiki/Recursion_(computer_science)#Types_of_recursion”>Wikipedia</a>.
+      <br><br>
+      Recursion is one of the most deceptively simple programming concepts. It sounds straightforward, but once you start working with it and try to really understand how it works, you may find yourself dizzy and confused.  If you find yourself feeling this way, take comfort knowing that the more you try it the easier and more comfortable you will become with the concept.
+    </p>
+      <h3>When Would You Use Recursion?</h3>
+      <p>
+      In general, problems that are defined in terms of themselves are good candidates for recursive techniques.  When using recursion, every recursive call must simplify the computation in some way. There must be special cases to handle the simplest computations – these are called the base cases.
+      <br><br>
+      The base case, or halting case, of a function is the problem that we know the answer to. It can be solved without any more recursive calls. The base case is what stops the recursion from continuing on forever. Every recursive function must have at least one base case.
+    </p>
+      <h3>Example of Recursion</h3>
+      <p>
+      Let’s take a look at the standard example used by many computer science textbooks, the factorial function.  The factorial of a number n is calculated by multiplying 1 * 2 * 3 *... n.  Here is how you would solve the problem recursively in JavaScript:
+      <pre><code>
+          int factorial (int n) {
+              if (n == 1) {
+                  return 1;
+              } else {
+                  return n*factorial(n-1);
+              }
+          }
+      </code></pre>
+
+      It’s important to remember that recursion is not the only way to solve problems.  You can often use iteration instead. There are advantages and disadvantages to each approach.  Here is how you would solve the above factorial problem using iteration:
+    </p>
+      <pre><code>
+        int factorial (int n) {
+            int product = 1;
+            for(int i=2; i < n; i++) {
+                product *= i;
+            }
+            return product;
+        }</code></pre>
+    <p>
+      I hope this brief overview provided a helful intorduction to the concpet of recursion.  If you want to learn how to use recursion, I suggest starting with the <a href="www.codecademy.com/en/courses/javascript-lesson-205/0/11" target="_blank">Codeacademy course</a> on the subject.
+    </p>
+  </article>
+
+    <footer>
+      <p>
+        Copyright Jeff Schneider 2015
+      </p>
+    </footer>
+
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    </body>
+</html>

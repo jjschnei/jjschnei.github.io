@@ -57,6 +57,17 @@ body{
   -background-size: cover;
 }
 
+pre{
+  background-color: #ffffff;
+  border-left-style: solid;
+  border-left-width: .20em;
+  border-left-color: #0099e6;
+  box-shadow: 0px 0px .031em .125px #cccccc;
+  margin-left: 3em;
+  margin-right: 8em;
+  font-size: 1.1em;
+}
+
 img.medium {
   max-width: 550px
 }
