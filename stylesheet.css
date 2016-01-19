@@ -19,11 +19,18 @@ section li {
   list-style-type: none;
   text-align: center;
   color: #262626;
-  font-family: Arial
-  font-size: 1.25em;
   text-transform: lowercase;
   margin: 1.25em;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  line-height: 1.3em;
+  font-color: #404040;
+  font-weight: lighter;
+  font-style: normal;
+
 }
+
+
 
 section a:link {
   text-decoration: none;
@@ -43,7 +50,10 @@ article {
   margin-right: 17em;
   margin-top: -1em;
   margin-bottom: 1em;
-
-
-
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  line-height: 1.3em;
+  font-color: #404040;
+  font-weight: lighter;
+  font-style: normal;
 }
