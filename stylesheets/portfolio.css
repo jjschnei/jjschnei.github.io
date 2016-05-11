@@ -18,6 +18,15 @@ body{
   text-align: center;
 }
 
+#hover{
+  width: 20.8em;
+  float: left;
+  margin: .7em;
+  height: 17.3em;
+  background-color: black
+  opacity: .8;
+}
+
 .entry{
   width: 20.8em;
   float: left;
@@ -28,6 +37,7 @@ body{
   border: .1em solid #d6d6d6;
 
 }
+
 
 figure {
   display: block;
@@ -42,6 +52,12 @@ figure {
 
 }
 
+article img{
+  width: 19.6em;
+  height: 14.9em;
+  border: .1em solid #d6d6d6;
+}
+
 figure img{
   width: 19.6em;
   height: 14.9em;
@@ -51,6 +67,8 @@ figure img{
 figcaption{
   padding-left: 4.2em;
 }
+
+
 
 
 /*
