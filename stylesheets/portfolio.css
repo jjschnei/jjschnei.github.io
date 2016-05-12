@@ -18,6 +18,15 @@ body{
   text-align: center;
 }
 
+#hover{
+  width: 20.8em;
+  float: left;
+  margin: .7em;
+  height: 17.3em;
+  background-color: black
+  opacity: .8;
+}
+
 .entry{
   width: 20.8em;
   float: left;
@@ -26,7 +35,30 @@ body{
   background-color: #e7e3d8;
   background-position: bottom;
   border: .1em solid #d6d6d6;
+}
 
+.fig-1 {
+  display: none;
+}
+
+.fig-2 {
+  display: none;
+}
+
+.fig-3 {
+  display: none;
+}
+
+.fig-4 {
+  display: none;
+}
+
+.fig-5 {
+  display: none;
+}
+
+.fig-6 {
+  display: none;
 }
 
 figure {
@@ -39,7 +71,13 @@ figure {
   text-align: center;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   color: #665544
+}
 
+
+article img{
+  width: 19.6em;
+  height: 14.9em;
+  border: .1em solid #d6d6d6;
 }
 
 figure img{
@@ -51,6 +89,8 @@ figure img{
 figcaption{
   padding-left: 4.2em;
 }
+
+
 
 
 /*
