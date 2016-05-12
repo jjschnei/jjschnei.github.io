@@ -33,4 +33,14 @@ $(document).ready(function(){
 		$('.fig-4').toggle();
 	})
 
+	$('#img-5').hover(
+		function() {
+		$('.fig-5').toggle();
+	})
+
+	$('#img-6').hover(
+		function() {
+		$('.fig-6').toggle();
+	})
+
 });

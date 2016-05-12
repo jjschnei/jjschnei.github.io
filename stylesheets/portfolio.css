@@ -53,6 +53,14 @@ body{
   display: none;
 }
 
+.fig-5 {
+  display: none;
+}
+
+.fig-6 {
+  display: none;
+}
+
 figure {
   display: block;
   width: 15.625em;
