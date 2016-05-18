@@ -13,6 +13,12 @@ $(document).ready(function(){
 
 	
 
+	// $('figcaption').hover(
+	// 	function() {
+	// 	$('this').toggle();
+	// })
+
+
 	$('#img-1').hover(
 		function() {
 		$('.fig-1').toggle();
