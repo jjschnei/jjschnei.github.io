@@ -37,6 +37,10 @@ body{
   border: .1em solid #d6d6d6;
 }
 
+/*testing jquery class*/
+.fig {
+  display: none;
+}
 
 .fig-1 {
   display: none;

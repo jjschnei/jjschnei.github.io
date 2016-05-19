@@ -9,13 +9,14 @@ $(document).ready(function(){
 		$(this).animate({opacity: '.5'});
 	}, function() {
 		$(this).animate({opacity: '1'});
-	} 
-
-	);
+	});
 
 	
 
-
+	$('figure').hover(
+		function(){
+			$(this).children('.fig').toggle();
+		})
 
 
 	$('#img-1').hover(
