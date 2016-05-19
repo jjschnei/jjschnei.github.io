@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+	$('.popdown').popdown({width:800});
+
 
 	$('img').hover(
 
@@ -13,10 +15,7 @@ $(document).ready(function(){
 
 	
 
-	// $('figcaption').hover(
-	// 	function() {
-	// 	$('this').toggle();
-	// })
+
 
 
 	$('#img-1').hover(
