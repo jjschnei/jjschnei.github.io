@@ -5,6 +5,8 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
+
+
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Jeff Schneider's Portfolio</title>
@@ -13,8 +15,14 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
+        <link type="text/css" rel="stylesheet" href="portfolio-popup/css/jquery.popdown.css" />
+
         <link type="text/css" rel="stylesheet" href="default.css" />
+
         <link type="text/css" rel="stylesheet" href="stylesheets/portfolio.css" />
+
+        
+
 
 
   </head>
@@ -25,57 +33,97 @@
 
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="resume.html">Resume</a></li>
-        <li><a href="blog-index.html">Blog</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/portfolio.html">Portfolio</a></li>
+        <li><a href="/resume.html">Resume</a></li>
+<!--         <li><a href="/blog-index.html">Blog</a></li> -->
+        <li><a href="/contact.html">Contact</a></li>
       </ul>
     </nav>
 
     <div class="wrapper">
       <div class="header">
-        <p>Portfolio</p>
-      </div>
-        <div class = "entry">
-          <figure><a href="cheat-sheet.html" ><img src="imgs/javascript_logo.png" alt="Creating Classes"/></a>
-            <figcaption>JS Object Cheat Sheet</figcaption>
-          </figure>
-        </div>
-
-        <div class = "entry">
-          <figure><img src="imgs/dice-roll.JPG" alt="Creating Classes"/>
-            <figcaption>Figure Caption 2</figcaption>
-          </figure>
-        </div>
-
-        <div class = "entry">
-          <figure><img src="imgs/dice-roll.JPG" alt="Creating Classes"/>
-            <figcaption>Figure Caption 3</figcaption>
-          </figure>
-        </div>
-
-        <div class = "entry">
-          <figure><img src="imgs/dice-roll.JPG" alt="Creating Classes"/>
-            <figcaption>Figure Caption 4</figcaption>
-          </figure>
-        </div>
-
       </div>
 
+        <div class = "entry">
+          <figure>
+            <a href="breadcrumbs.html" class="popdown" title="Breadcrumbs">
+              <img id='img-1' src="imgs/breadcrumbs.png" alt="breadcrumbs"/>
+            </a>
+            <figcaption class="fig">Breadcrumbs iOS App</figcaption>
+          </figure>
+        </div>      
+        
+        <div class = "entry">
+          <figure>
+            <a class="popdown" href="clea.html" alt="clea">
+              <img id='img-2' src="imgs/clea.png" alt="clea"/>
+            </a>
+            <figcaption class="fig">Clea</figcaption>
+          </figure>
+        </div>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <div class = "entry">
+          <figure>
+            <a class="popdown" href="ecommerce.html">
+              <img class="img" id='img-7' src="imgs/ecommerce4x3.jpg" alt="sherlybox"/>
+            </a>  
+            <figcaption class="fig">eCommerce Platform</figcaption>
+          </figure>
+        </div>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
+        <div class = "entry">
+          <figure>
+            <a href="launchmachine.html" class="popdown">
+              <img id='img-4' src="imgs/launchmachine.png" alt="launch machine"/>
+            </a>
+            <figcaption class="fig">Launch Machine</figcaption>
+          </figure>
+        </div>
+
+        <div class = "entry">
+          <figure>
+            <a class="popdown" href="speakeasybriefs.html">
+              <img id='img-5' src="imgs/speakeasybriefslogo.png" alt="speakeasy briefs"/>
+            </a>
+            <figcaption class="fig">Speakeasy Briefs</figcaption>
+          </figure>
+        </div>
+
+        <div class = "entry">
+          <figure>
+            <a class="popdown" href="sherlybox.html">
+              <img id='img-6' src="imgs/sherlybox.png" alt="sherlybox"/>
+            </a>  
+            <figcaption class="fig">Sherly Box</figcaption>
+          </figure>
+        </div>
+
+        <div class = "entry">
+          <figure>
+            <a class="popdown" href="randeux.html">
+              <img id='img-3' src="imgs/dice-roll.JPG" alt="randeux"/>
+            </a>
+            <figcaption class="fig">Randeux</figcaption>
+          </figure>
+        </div>
+
+        <div class = "entry">
+          <figure>
+            <a class="popdown" href="girlux.html">
+              <img class="img" id='img-8' src="imgs/grilluxw.jpg" alt="sherlybox"/>
+            </a>  
+            <figcaption class="fig">Girl Lux</figcaption>
+          </figure>
+        </div>
+        <p><br></p>
+        <p><br></p>
+      </div>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+      <script type="text/javascript" src="portfolio-popup/lib/jquery.popdown.js"></script>
+        
+      <script type="text/javascript" src="portfolio.js" ></script>
     </body>
 </html>
