@@ -5,8 +5,8 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-        <script type="text/javascript" src="portfolio.js" ></script>
+
+
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Jeff Schneider's Portfolio</title>
@@ -15,8 +15,13 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
+        <link type="text/css" rel="stylesheet" href="portfolio-popup/css/jquery.popdown.css" />
+
         <link type="text/css" rel="stylesheet" href="default.css" />
+
         <link type="text/css" rel="stylesheet" href="stylesheets/portfolio.css" />
+
+        
 
 
 
@@ -28,11 +33,11 @@
 
     <nav>
       <ul>
-        <li><a href="about.html">About</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="resume.html">Resume</a></li>
-        <li><a href="blog-index.html">Blog</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/portfolio.html">Portfolio</a></li>
+        <li><a href="/resume.html">Resume</a></li>
+<!--         <li><a href="/blog-index.html">Blog</a></li> -->
+        <li><a href="/contact.html">Contact</a></li>
       </ul>
     </nav>
 
@@ -42,57 +47,83 @@
 
         <div class = "entry">
           <figure>
-            <a href="breadcrumbs.html" alt="Breadcrumbs">
+            <a href="breadcrumbs.html" class="popdown" title="Breadcrumbs">
               <img id='img-1' src="imgs/breadcrumbs.png" alt="breadcrumbs"/>
             </a>
-            <figcaption class="fig-1">Breadcrumbs iOS App</figcaption>
+            <figcaption class="fig">Breadcrumbs iOS App</figcaption>
           </figure>
         </div>      
         
         <div class = "entry">
           <figure>
-            <a href="clea.html" alt="clea">
+            <a class="popdown" href="clea.html" alt="clea">
               <img id='img-2' src="imgs/clea.png" alt="clea"/>
             </a>
-            <figcaption class="fig-2">Clea</figcaption>
+            <figcaption class="fig">Clea</figcaption>
           </figure>
         </div>
 
         <div class = "entry">
           <figure>
-            <a href="randeux.html">
-              <img id='img-3' src="imgs/dice-roll.JPG" alt="randeux"/>
-            </a>
-            <figcaption class="fig-3">Randeux</figcaption>
+            <a class="popdown" href="ecommerce.html">
+              <img class="img" id='img-7' src="imgs/ecommerce4x3.jpg" alt="sherlybox"/>
+            </a>  
+            <figcaption class="fig">eCommerce Platform</figcaption>
           </figure>
         </div>
 
         <div class = "entry">
           <figure>
-            <a href="launchmachine.html">
+            <a href="launchmachine.html" class="popdown">
               <img id='img-4' src="imgs/launchmachine.png" alt="launch machine"/>
             </a>
-            <figcaption class="fig-4">Launch Machine</figcaption>
+            <figcaption class="fig">Launch Machine</figcaption>
           </figure>
         </div>
 
         <div class = "entry">
           <figure>
-            <a href="speakeasybriefs.html">
+            <a class="popdown" href="speakeasybriefs.html">
               <img id='img-5' src="imgs/speakeasybriefslogo.png" alt="speakeasy briefs"/>
             </a>
-            <figcaption class="fig-5">Speakeasy Briefs</figcaption>
+            <figcaption class="fig">Speakeasy Briefs</figcaption>
           </figure>
         </div>
 
         <div class = "entry">
           <figure>
-            <a href="sherlybox.html">
+            <a class="popdown" href="sherlybox.html">
               <img id='img-6' src="imgs/sherlybox.png" alt="sherlybox"/>
             </a>  
-            <figcaption class="fig-6">Sherly Box</figcaption>
+            <figcaption class="fig">Sherly Box</figcaption>
           </figure>
         </div>
+
+        <div class = "entry">
+          <figure>
+            <a class="popdown" href="randeux.html">
+              <img id='img-3' src="imgs/dice-roll.JPG" alt="randeux"/>
+            </a>
+            <figcaption class="fig">Randeux</figcaption>
+          </figure>
+        </div>
+
+        <div class = "entry">
+          <figure>
+            <a class="popdown" href="girlux.html">
+              <img class="img" id='img-8' src="imgs/grilluxw.jpg" alt="sherlybox"/>
+            </a>  
+            <figcaption class="fig">Girl Lux</figcaption>
+          </figure>
+        </div>
+        <p><br></p>
+        <p><br></p>
       </div>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+      <script type="text/javascript" src="portfolio-popup/lib/jquery.popdown.js"></script>
+        
+      <script type="text/javascript" src="portfolio.js" ></script>
     </body>
 </html>
