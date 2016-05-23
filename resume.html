@@ -16,11 +16,20 @@
 	  </ul>
 	</nav>
 
-	<div class="pdfobject" id="resume">
+<!-- 	<div class="pdfobject" id="resume">
 
 		<script>PDFObject.embed("resume.pdf", "#resume", {width: "80%"});</script>
 
-	</div>
+	</div> -->
+
+
+	<object data="resume.pdf#page=1" type="application/pdf" width="100%" height="100%">
+
+		<iframe src="resume.pdf#page=1" width="100%" height="100%" style="border: none;">
+		This browser does not support PDFs. Please download the PDF to view it: <a href="resume.pdf">Download PDF</a>
+		</iframe>
+	
+	</object>
 
 </body>
 </html>
