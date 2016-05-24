@@ -46,10 +46,7 @@ section a:hover {
 }
 
 article {
-  margin-left: 17em;
-  margin-right: 17em;
-  margin-top: -1em;
-  margin-bottom: 1em;
+  padding: .5em;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-size: 1em;
   line-height: 1.3em;
@@ -60,7 +57,10 @@ article {
 
 @media (min-width: 1000px) {
   article {
-    padding: .5em;
+    margin-left: 17em;
+    margin-right: 17em;
+    margin-top: -1em;
+    margin-bottom: 1em;
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
     font-size: 1em;
     line-height: 1.3em;
