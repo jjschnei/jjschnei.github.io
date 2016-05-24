@@ -29,10 +29,13 @@ nav li {
   text-align: center;
 }
 
-.pdfobject {
+/*.pdfobject {
   text-align: center;
-}
+}*/
 
+.resume {
+  align-content: center;
+}
 
 nav a:link {
   color: #8c8c8c;
