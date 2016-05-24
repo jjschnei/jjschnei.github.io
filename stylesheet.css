@@ -6,7 +6,7 @@ body{
 }
 
 img {
-  width: 35vw;
+  width: 45vw;
   border: sold black .1em;
   margin-right: auto;
   margin-left: auto;
@@ -46,25 +46,26 @@ section a:hover {
 }
 
 article {
+  color: #494949;
   padding: .5em;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-size: 1em;
   line-height: 1.3em;
-  font-color: #404040;
   font-weight: lighter;
   font-style: normal;
+  margin-top: -2em;
 }
 
 @media (min-width: 1000px) {
   article {
-    margin-left: 17em;
-    margin-right: 17em;
-    margin-top: -1em;
+    margin-left: 15em;
+    margin-right: 15em;
+    margin-top: -2em;
     margin-bottom: 1em;
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
     font-size: 1em;
     line-height: 1.3em;
-    font-color: #404040;
+    color: #494949;
     font-weight: lighter;
     font-style: normal;
   }
