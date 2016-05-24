@@ -57,3 +57,15 @@ article {
   font-weight: lighter;
   font-style: normal;
 }
+
+@media (min-width: 1000px) {
+  article {
+    padding: .5em;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    line-height: 1.3em;
+    font-color: #404040;
+    font-weight: lighter;
+    font-style: normal;
+  }
+}
