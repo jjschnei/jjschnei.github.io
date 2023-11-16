@@ -39,7 +39,19 @@
     <div class="image">
       <img src="imgs/hero-image-sqr.jpg" alt="Jeff Schneider Headshot" />
     </div>
-
+    <script type="text/javascript">
+  (function(d, t) {
+      var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+      v.onload = function() {
+        window.voiceflow.chat.load({
+          verify: { projectID: '6554614d26584b909b5d8da6' },
+          url: 'https://general-runtime.voiceflow.com',
+          versionID: 'production'
+        });
+      }
+      v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+  })(document, 'script');
+</script>
 
         <!-- <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script> -->
 
